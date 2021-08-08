@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Record</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container" id="nav">
+        <div class="text-center">
+          <a
+            href="/"
+            class="text-dark text-center"
+            style="text-decoration: underline"
+            >Create new Record</a
+          >
+        </div>
+      </div>
+    </header>
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+            <a href="/">All Records</a> <i class="fas fa-angle-double-left"></i>
+          </div>
+        </div>
+        <div class="form-title text-center">
+          <h2 class="text-dark">New Record</h2>
+          <span class="text-light">Use this form to create new record</span>
+        </div>
+        <!-- form handling -->
+        <form method="POST" id="update_user"></form>
+        <div class="add_user">
+          <div class="form-group">
+            <label for="changenumber" class="text-light">Change Number :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="text" name="changenumber" value="" placeholder="Type change number"/>
+          </div>
+          <div class="form-group">
+            <label for="ciname" class="text-light">CI Name :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="ciname" value="" />
+          </div>
+          <div class="form-group">
+            <label for="finalbackup" class="text-light">Final Backup Taken? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="finalbackup" value="" />
+          </div>
+          <div class="form-group">
+            <label for="servershutdown" class="text-light">Server shutdown for 5 days? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="servershutdown" value="" />
+          </div>
+          <div class="form-group">
+            <label for="ciupdated" class="text-light">CI Updated? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="ciupdated" value="" />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn text-dark update">Submit Record</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

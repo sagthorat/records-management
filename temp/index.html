@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="container" id="nav">
+        <div class="text-center">
+          <a href="/" class="nav-brand text-dark text-center" style="text-decoration: underline;">Server Decomission Checklist</a>
+        </div>
+      </div>
+    </header>
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <a href="/add-record" class="border-shadow">
+            <span class="text-gradient"
+              >Add New Record <i class="fas fa-user"></i
+            ></span>
+          </a>
+        </div>
+        <!-- form handling -->
+        <form action="/" method="POST">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>Change Number</th>
+                <th>CI Name</th>
+                <th>Final Backup Taken?</th>
+                <th>Server Shut down for 5 days?</th>
+                <th>CI updated?</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12345</td>
+                <td>server1001</td>
+                <td>
+                  <input type="checkbox" name="backup" id="backup">
+                </td>
+                <td>
+                  <input type="checkbox" name="shutdown" id="shutdown">
+                </td>
+                <td>
+                  <input type="checkbox" name="ciupdate" id="ciupdate">
+                </td>
+                           <td>
+                  <a href="#" class="btn border-shadow update">
+                    <span class="text-gradient"></span>
+                      <i class="fas fa-pencil-alt"></i
+                    ></span>
+                  </a>
+                  <a class="btn border-shadow delete">
+                    <span class="text-gradient"></span>
+                      <i class="fas fa-times"></i
+                    ></span>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

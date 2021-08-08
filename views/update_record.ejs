@@ -1,0 +1,59 @@
+<!-- include header -->
+<%- include('include/_header') %>
+
+
+<header id="header">
+      <div class="container" id="nav">
+        
+       </header>
+    <main id="site-main">
+      <div class="container">
+        <div class="box-nav d-flex justify-between">
+          <div class="filter">
+            <a href="/">All Records</a> <i class="fas fa-angle-double-left"></i>
+          </div>
+        </div>
+        <div class="form-title text-center">
+          <h2 class="text-dark">Update Record</h2>
+          <span class="text-light">Use this form to update the record</span>
+        </div>
+        <!-- form handling -->
+        <form method="POST" id="update_record"></form>
+        <div class="add_user">
+          <div class="form-group">
+            <label for="changenumber" class="text-light">Change Number :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="text" name="changenumber" value="" placeholder="Type change number"/>
+          </div>
+          <div class="form-group">
+            <label for="ciname" class="text-light">CI Name :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="ciname" value="" />
+          </div>
+          <div class="form-group">
+            <label for="finalbackup" class="text-light">Final Backup Taken? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="finalbackup" value="" />
+          </div>
+          <div class="form-group">
+            <label for="servershutdown" class="text-light">Server shutdown for 5 days? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="servershutdown" value="" />
+          </div>
+          <div class="form-group">
+            <label for="ciupdated" class="text-light">CI Updated? :</label>
+            <input type="hidden" name="id" value="" />
+            <input type="checkbox" name="ciupdated" value="" />
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn text-dark update">Submit Record</button>
+          </div>
+        </div>
+    </form>
+      </div>
+    </main>
+
+
+<!-- include footer -->
+
+<%- include('include/_footer') %>
